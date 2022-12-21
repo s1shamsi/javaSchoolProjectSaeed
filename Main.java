@@ -19,6 +19,7 @@ public class Main {
 		school1.setName(sc.nextLine());
 		System.out.print("Please Enter School Location : ");
 		school1.setLocation(sc.nextLine());
+		
 		while(option) {
 	
 			Department dep = new Department();
@@ -126,6 +127,7 @@ public class Main {
 					System.out.println("================================================");
 				}
 			
+				System.out.println("================================================");
 				System.out.println("====== Thank you for using our system! =========");
 				System.out.println("================================================");
 				System.out.println("================================================");
