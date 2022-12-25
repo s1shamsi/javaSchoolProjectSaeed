@@ -24,7 +24,8 @@ public class Main {
 		school1.setName(sc.nextLine());
 		System.out.print("Please Enter School Location : ");
 		school1.setLocation(sc.nextLine());
-		
+		System.out.println("\n");
+		System.out.println("\n");
 		while(option) {
 	
 			Department dep = new Department();
