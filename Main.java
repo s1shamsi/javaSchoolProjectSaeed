@@ -15,9 +15,11 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		School school1 = new School();
 		System.out.println("    Bismillah Al-rahman Al-rahim    ");
-		System.out.println("welcome to S.CodeLine school system");
-		System.out.println("This system is just simple system");
-
+		System.out.println("\n");
+		System.out.println("          welcome to S.CodeLine school system");
+		System.out.println("           This system is just simple system");
+		System.out.println("\n");
+		System.out.println("\n");
 		System.out.print("Please Enter School Name : ");
 		school1.setName(sc.nextLine());
 		System.out.print("Please Enter School Location : ");
