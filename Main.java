@@ -6,14 +6,17 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		boolean option = true ;
-		boolean option2 = true ;
-		boolean option3 = true ;
-		boolean option4 = true ;
+		boolean option = true ; //for loop 1
+		boolean option2 = true ; //for loop 2
+		boolean option3 = true ; //for loop 3
+		boolean option4 = true ; //for loop 4
 		
-		ArrayList<Department> dep1 = new ArrayList<Department>();
-		Scanner sc = new Scanner(System.in);
+		ArrayList<Department> dep1 = new ArrayList<Department>(); //array list for department 
+		
+		Scanner sc = new Scanner(System.in); //start a scanner to add things by user
+		
 		School school1 = new School();
+		
 		System.out.println("    Bismillah Al-rahman Al-rahim    ");
 		System.out.println("\n");
 		System.out.println("          welcome to S.CodeLine school system");

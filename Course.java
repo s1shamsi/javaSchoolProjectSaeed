@@ -11,12 +11,12 @@ public class Course {
 	private String nameOfCourse;
 	private String IdOfCourse;
 	Scanner Sc = new Scanner(System.in);
-	 public void setNameOfCourse(String name) {
+	 public void setNameOfCourse(String name) { // set the name of course 
 	this.nameOfCourse = name;
 	/*System.out.println("Enter Teacher name");
 	name = Sc.nextLine();*/
 	}
-		public String getNameOfCourse() {
+		public String getNameOfCourse() {   //save the course and print it when needed
 			 
 				return nameOfCourse;
 				}
