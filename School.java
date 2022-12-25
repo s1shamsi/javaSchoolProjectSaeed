@@ -4,7 +4,7 @@ public class School {
 
 	private String nameOfSchool;
 	private  String locationOfSchool;
-	Department Dep = new Department();
+	//Department Dep = new Department();
 	
 	public void setName(String name) {
 	this.nameOfSchool = name;

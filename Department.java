@@ -2,7 +2,14 @@ package objchain;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class Department {
+	
+	Department (String depID)
+	{
+System.out.println("Dep ID= " + depID );
+	}
+	
 	String nameOfDepatment;
+	
 	ArrayList<Teacher> arr2 = new ArrayList<Teacher>();
 	int numOfFloors;
 	Teacher Tec = new Teacher();

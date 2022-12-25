@@ -17,7 +17,7 @@ public class Main {
 		
 		School school1 = new School();
 		
-		System.out.println("    Bismillah Al-rahman Al-rahim    ");
+		System.out.println("              Bismillah Al-rahman Al-rahim    ");
 		System.out.println("\n");
 		System.out.println("          welcome to S.CodeLine school system");
 		System.out.println("           This system is just simple system");
@@ -33,7 +33,7 @@ public class Main {
 		
 		while(option) {  //loop start with add department 
 	
-			Department dep = new Department();
+			Department dep = new Department("MUS1");
 			System.out.print("Please Enter Department Name : ");
 			dep.setNameOfDepatment(sc.next());
 			System.out.print("Please Enter Department Floor : ");
@@ -131,7 +131,7 @@ public class Main {
 								  System.out.println("===============   Course Details  =================");
 								System.out.println(" Course name is : " + c.getNameOfCourse());
 								System.out.println(" Course ID is : :" + c.getIdOfCourse());
-								System.out.println(" mathMark is : " + c.markCourse.getTheMark());
+								System.out.println(" Course Mark is : " + c.markCourse.getTheMark());
 								System.out.println("================================================");
 								System.out.println("================================================");
 						}
