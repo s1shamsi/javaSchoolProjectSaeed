@@ -28,7 +28,7 @@ public class Main {
 		System.out.print("Please Enter School Location : ");
 		school1.setLocation(sc.nextLine());
 		System.out.println("\n");
-		System.out.println("\n");
+
 		
 		
 		while(option) {  //loop start with add department 
@@ -38,7 +38,7 @@ public class Main {
 			dep.setNameOfDepatment(sc.next());
 			System.out.print("Please Enter Department Floor : ");
 			dep.setNumOfFloors(sc.nextInt());
-			
+			System.out.println("\n");
 			while(option2) { //loop 1 in loop to add teacher
 				
 				Teacher t = new Teacher();
@@ -46,7 +46,7 @@ public class Main {
 				t.setNameOfTeacher(sc.next());
 				System.out.print("Please Enter Teacher ID : ");
 				t.setIdOfTeacher(sc.nextInt());
-				
+				System.out.println("\n");
 				while(option3) {                           //loop2 in loop 1 for add course
 					
 					Student st = new Student();
@@ -56,7 +56,7 @@ public class Main {
 					st.setIdOfStudent(sc.nextInt());
 			
 					t.studentList.add(st);
-				
+					System.out.println("\n");
 				    while(option4) {                        //loop3 in loop 2 for add course 
 					
 					Course cr = new Course();
@@ -107,25 +107,33 @@ public class Main {
 				System.out.println("\n");
 				System.out.println(" School name is :" + school1.getName());
 				System.out.println(" School Location is :" + school1.getLocation());
+				System.out.println("\n");
 				System.out.println("===============  Department  =================");
+				System.out.println("\n");
 
 				for( Department department :dep1) { // print department details 
 					
 					System.out.println(" Department name is " + department.getNameOfDepatment());
 					System.out.println(" Department Floor No. is " + department.getNumOfFloors());
+					System.out.println("\n");
 					System.out.println("===============     Teachers  =================");
+					System.out.println("\n");
 					for(Teacher t : department.arr2) { //print teacher details 
 						  System.out.println("===============   Teacher Details   =================");
 						System.out.println(" Teacher name is : " + t.getNameOfTeacher());
 						System.out.println(" Teacher id is : :" + t.getIdOfTeacher());
+						System.out.println("\n");
 						System.out.println("===============   Students   =================");
+						System.out.println("\n");
 						for(Student s : t.studentList) { //print student details 
 							//System.out.println("================== Student Details =====================");
 							System.out.println(" Student name is : " + s.getNameOfStudent());
 							System.out.println(" Student id is : :" + s.getIdOfStudent());
 							
 							System.out.println("================================================");
+							System.out.println("\n");
 							  System.out.println("===============   Courses   =================");
+							  System.out.println("\n");
 							  for(Course c : s.coList) { //print course details and mark 
 								
 								  System.out.println("===============   Course Details  =================");
@@ -142,9 +150,9 @@ public class Main {
 				}
 			///athkar ending
 				System.out.println("================================================");
-				System.out.println("======= Thank you for using our system! =======");
+				System.out.println("======= Thank you for using our system! ========");
 				System.out.println("============== Alhamdulillah ===================");
-				System.out.println("============= La Ilaha Illallah ===============");
+				System.out.println("============= La Ilaha Illallah ================");
 				System.out.println("=============== Allahu Akbar ===================");
 				System.out.println("\n");
 				System.out.println("        This Athkar not taliban!!!     ");
