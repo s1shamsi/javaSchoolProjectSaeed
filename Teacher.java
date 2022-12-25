@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Teacher {
 
 	Student student1 = new Student();
-	ArrayList<Student> studentList = new ArrayList<Student>();
+	ArrayList<Student> studentList = new ArrayList<Student>(); ///Student array list
 	
 	private String nameOfTeacher;
 	private int IdOfTeacher;

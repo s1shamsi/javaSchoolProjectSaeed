@@ -146,6 +146,8 @@ public class Main {
 				System.out.println("============== Alhamdulillah ===================");
 				System.out.println("============= La Ilaha Illallah ===============");
 				System.out.println("=============== Allahu Akbar ===================");
+				System.out.println("\n");
+				System.out.println("        This Athkar not taliban!!!     ");
 			}
 			
 		}
