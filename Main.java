@@ -14,7 +14,9 @@ public class Main {
 		ArrayList<Department> dep1 = new ArrayList<Department>();
 		Scanner sc = new Scanner(System.in);
 		School school1 = new School();
-		System.out.println("welcome to school system");
+		System.out.println("welcome to S.CodeLine school system");
+		System.out.println("This system is just simple system");
+
 		System.out.print("Please Enter School Name : ");
 		school1.setName(sc.nextLine());
 		System.out.print("Please Enter School Location : ");
