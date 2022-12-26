@@ -2,6 +2,7 @@ package objchain;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Main {
 
@@ -12,7 +13,7 @@ public class Main {
 		boolean option4 = true ; //for loop 4
 		
 		ArrayList<Department> dep1 = new ArrayList<Department>(); //array list for department 
-		
+		Stack<String>  stack = new Stack<>();
 		Scanner sc = new Scanner(System.in); //start a scanner to add things by user
 		
 		School school1 = new School();
@@ -24,49 +25,79 @@ public class Main {
 		System.out.println("\n");
 		System.out.println("\n");
 		System.out.print("Please Enter School Name : ");
-		school1.setName(sc.nextLine());
+		String S1 = sc.nextLine();
+		school1.setName(S1);
+		stack.push(S1);
 		System.out.print("Please Enter School Location : ");
-		school1.setLocation(sc.nextLine());
+		String S2 = sc.nextLine();
+		school1.setLocation(S2);
+		stack.push(S2);
 		System.out.println("\n");
-
+		
 		
 		
 		while(option) {  //loop start with add department 
 	
 			Department dep = new Department("MUS1");
 			System.out.print("Please Enter Department Name : ");
-			dep.setNameOfDepatment(sc.next());
+			String d1 = sc.next();
+			dep.setNameOfDepatment(d1);
+			stack.push(d1);
 			System.out.print("Please Enter Department Floor : ");
-			dep.setNumOfFloors(sc.nextInt());
+			int d2 = sc.nextInt();
+			dep.setNumOfFloors(d2);
+			String d = Integer.toString(d2);
+			stack.push(d);
 			System.out.println("\n");
+		
 			while(option2) { //loop 1 in loop to add teacher
 				
 				Teacher t = new Teacher();
 				System.out.print("Please Enter Teacher name : ");
-				t.setNameOfTeacher(sc.next());
+				String t1 = sc.next();
+				t.setNameOfTeacher(t1);
+				stack.push(t1);
 				System.out.print("Please Enter Teacher ID : ");
-				t.setIdOfTeacher(sc.nextInt());
+				int t2 = sc.nextInt();
+				t.setIdOfTeacher(t2);
+				String t3 = Integer.toString(t2);
+				stack.push(t3);
 				System.out.println("\n");
+				
 				while(option3) {                           //loop2 in loop 1 for add course
 					
 					Student st = new Student();
 					System.out.print("Please Enter Student name : ");
-					st.setNameOfStudent(sc.next());
+					String st1 = sc.next();
+					st.setNameOfStudent(st1);
+					stack.push(st1);
 					System.out.print("Please Enter Student ID : ");
-					st.setIdOfStudent(sc.nextInt());
-			
+					int st2 = sc.nextInt();
+					st.setIdOfStudent(st2);
+					
+					String s = Integer.toString(st2);
+					stack.push(s);
 					t.studentList.add(st);
 					System.out.println("\n");
+					
 				    while(option4) {                        //loop3 in loop 2 for add course 
 					
 					Course cr = new Course();
 					System.out.print("Please Enter Course name : ");
-					cr.setNameOfCourse(sc.next());
+					String c1 = sc.next();
+					cr.setNameOfCourse(c1);
+					stack.push(c1);
 					System.out.print("Please Enter Course Id : ");
-					cr.setIdOfCourse(sc.next());
+					String c2 = sc.next();
+					cr.setIdOfCourse(c2);
+					stack.push(c2);
 					System.out.print("Please Enter Mark : ");
-					cr.markCourse.setTheMark(sc.nextInt());
+					int c3 = sc.nextInt();
+					cr.markCourse.setTheMark(c3);
+					String c = Integer.toString(c3);
+					stack.push(c);
 					st.coList.add(cr);
+					
 					System.out.print("Press 1 to add course, Press 2 if you dont want to add course "); //repeat or end the course loop
 					if(sc.nextInt()!= 1) {
 						option4 = false;
@@ -157,9 +188,11 @@ public class Main {
 				System.out.println("\n");
 				System.out.println("        This Athkar not taliban!!!     ");
 			}
-			
+		  
 		}
 		sc.close();
+		stack.pop();
+		 System.out.println(stack); 
 	}
 
 }
