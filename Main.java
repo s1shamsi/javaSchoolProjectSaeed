@@ -1,6 +1,9 @@
 package objchain;
 
-import java.util.ArrayList;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.*;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -186,13 +189,55 @@ public class Main {
 				System.out.println("============= La Ilaha Illallah ================");
 				System.out.println("=============== Allahu Akbar ===================");
 				System.out.println("\n");
-				System.out.println("        This Athkar not taliban!!!     ");
+				//System.out.println("        This Athkar not taliban!!!     ");
 			}
 		  
 		}
-		sc.close();
-		stack.pop();
-		 System.out.println(stack); 
-	}
+	
+		try {
+			
+			BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"));
+			writer.write("this is your history list");
+			writer.write("\n");
+			writer.write(" School name is :" + stack.get(0));
+			writer.write("\n");
+			writer.write(" School Location is :" + stack.get(1));
+			writer.write("\n");
+			writer.write(" Department name is:" + stack.get(2));
+			writer.write("\n");
+			writer.write(" Department Floor No. is" +stack.get(3));
+			writer.write("\n");
+			writer.write(" Teacher name is : " +stack.get(4));
+			writer.write("\n");
+			writer.write(" Teacher id is : " + stack.get(5));
+			writer.write("\n");
+			writer.write(" Student name is : " +stack.get(6));
+			writer.write("\n");
+			writer.write(" Student id is : " + stack.get(7));
+			writer.write("\n");
+			writer.write(" Course name is : " + stack.get(8));
+			writer.write("\n");
+			writer.write(" Course ID is : " + stack.get(9));
+			writer.write("\n");
+			
+			writer.write(" Course Mark is : " + stack.get(10));
+				//
+				// System.out.println(" School name is :" + v.indexOf("11"));
+			//}
+			
+			writer.close();
+			}
+			catch (IOException o) {
+				o.printStackTrace();			
+		}
 
-}
+		}
+	}
+		//sc.close();
+		/*stack.pop();
+		 System.out.println(stack); 
+*/
+	
+
+
+
