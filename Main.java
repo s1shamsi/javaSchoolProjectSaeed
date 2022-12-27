@@ -1,6 +1,10 @@
 package objchain;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
@@ -230,9 +234,37 @@ public class Main {
 			catch (IOException o) {
 				o.printStackTrace();			
 		}
-
+		 File file = new File("C:\\Users\\Lenovo\\eclipse-workspace\\objchain\\output.txt");
+		 
+		   
+		        // Creating an object of BufferedReader class
+		        BufferedReader br = null;
+				try {
+					br = new BufferedReader(new FileReader(file));
+				} catch (FileNotFoundException e) {
+			
+					e.printStackTrace();
+				}
+		 
+		    
+		        String st;
+		        // Condition holds true till
+		  
+		        try {
+		        	System.out.println("This is read from file system");
+		        	System.out.println("\n");
+					while ((st = br.readLine()) != null)
+ 
+					    // Print the string
+					
+					    System.out.println(st);
+				} catch (IOException e) {
+			
+					e.printStackTrace();
+				}
+		    }
 		}
-	}
+	
 		//sc.close();
 		/*stack.pop();
 		 System.out.println(stack); 
