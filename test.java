@@ -11,7 +11,7 @@ import java.util.*;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Main {
+public class test {
 	   static void modifyFile(String filePath, String oldString, String newString)
        {
        File fileToBeModified = new File(filePath);
@@ -320,7 +320,7 @@ public class Main {
 		        
 		        modifyFile("C:\\\\Users\\\\Lenovo\\\\eclipse-workspace\\\\objchain\\\\output.txt", "11", "this element has ben edit");
 		         
-		        System.out.println("Change element Done!!!");
+		        System.out.println("done");
 
 		    }
 		}
