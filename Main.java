@@ -41,7 +41,7 @@ public class Main {
             
           
 			String newContent = oldContent.replaceAll(oldString, newString);
-            
+			
            //Rewriting the input text file with newContent
             
            writer = new FileWriter(fileToBeModified);
@@ -299,8 +299,21 @@ public class Main {
 			
 					e.printStackTrace();
 				}
-		 
-		    
+			     System.out.println("Do you want to change any thing in the text file? if yes enter 1");
+			     int x=sc.nextInt();
+			     if(x == 1) {
+			    	 System.out.println("Enter what we have to change?");
+			    	 String old= sc.next();
+			    	 
+			    	 
+			    	 System.out.println("Enter what new the element");
+			    	 String new1 =sc.next(); 
+			    	 
+			    	 
+			        modifyFile("C:\\Users\\Lenovo\\eclipse-workspace\\objchain\\output.txt",old, new1);
+			         
+			        System.out.println("Change element Done!!!");
+			        System.out.println("\n");
 		        String st;
 		        // Condition holds true till
 		  
@@ -316,12 +329,8 @@ public class Main {
 			
 					e.printStackTrace();
 				}
-		     
-		        
-		        modifyFile("C:\\\\Users\\\\Lenovo\\\\eclipse-workspace\\\\objchain\\\\output.txt", "11", "this element has ben edit");
-		         
-		        System.out.println("Change element Done!!!");
-
+		
+		     }
 		    }
 		}
 	
