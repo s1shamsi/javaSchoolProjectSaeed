@@ -1,0 +1,12 @@
+this is your history list
+ School name is :11
+ School Location is :22
+ Department name is:33
+ Department Floor No. is44
+ Teacher name is : 55
+ Teacher id is : 66
+ Student name is : 77
+ Student id is : 88
+ Course name is : 99
+ Course ID is : 10
+ Course Mark is : 12

@@ -1,4 +1,4 @@
-package objchain;
+//package objchain;
 //import java.util.Scanner;
 public class School {
 

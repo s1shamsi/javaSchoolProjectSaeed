@@ -1,4 +1,4 @@
-package objchain;
+//package objchain;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -251,7 +251,7 @@ public class Main {
 			}
 		  
 		}
-	
+	/////
 		try {
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"));
@@ -288,7 +288,7 @@ public class Main {
 			catch (IOException o) {
 				o.printStackTrace();			
 		}
-		 File file = new File("C:\\\\Users\\\\Lenovo\\\\eclipse-workspace\\\\objchain\\\\output.txt");
+		 File file = new File("C:\\Users\\Lenovo\\eclipse-workspace\\javaSchoolProjectSaeed-master\\output.txt");
 		 
 		   
 		        // Creating an object of BufferedReader class
@@ -310,7 +310,7 @@ public class Main {
 			    	 String new1 =sc.next(); 
 			    	 
 			    	 
-			        modifyFile("C:\\Users\\Lenovo\\eclipse-workspace\\objchain\\output.txt",old, new1);
+			        modifyFile("C:\\Users\\Lenovo\\eclipse-workspace\\javaSchoolProjectSaeed-master\\output.txt",old, new1);
 			         
 			        System.out.println("Change element Done!!!");
 			        System.out.println("\n");
