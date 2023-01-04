@@ -14,6 +14,8 @@ import java.util.Stack;
 public class Main {
 	   static void modifyFile(String filePath, String oldString, String newString)
        {
+		   
+		   
        File fileToBeModified = new File(filePath);
         
        String oldContent = "";
@@ -67,7 +69,13 @@ public class Main {
                e.printStackTrace();
            }
        }}
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Throwable {
+		
+		
+		 Finalize fa = new Finalize();
+	        // Calling finalize 
+	        fa.finalize();
+		
 		boolean option = true ; //for loop 1
 		boolean option2 = true ; //for loop 2
 		boolean option3 = true ; //for loop 3
@@ -251,7 +259,7 @@ public class Main {
 			}
 		  
 		}
-	/////
+	
 		try {
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"));
@@ -331,7 +339,8 @@ public class Main {
 				}
 		
 		     }
-		    }
+			    	    
+	}
 		}
 	
 		//sc.close();

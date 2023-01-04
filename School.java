@@ -1,6 +1,8 @@
+import java.io.Serializable;
+
 //package objchain;
 //import java.util.Scanner;
-public class School {
+public class School implements Serializable {
 
 	private String nameOfSchool;
 	private  String locationOfSchool;

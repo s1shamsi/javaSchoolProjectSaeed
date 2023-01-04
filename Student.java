@@ -1,15 +1,16 @@
 //package objchain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Student {
+public class Student implements Serializable {
 
 	Course course1 = new Course();
 	ArrayList<Course> coList = new ArrayList<Course>(); //array list for course class 
 	private String nameOfStudent;
 	private int IdOfStudent;
-	Scanner Sc = new Scanner(System.in);
+	transient Scanner Sc = new Scanner(System.in);
 	 public void setNameOfStudent(String name) { //set the name of student 
 	this.nameOfStudent = name;
 	/*System.out.println("Enter Teacher name");

@@ -1,16 +1,16 @@
-
+import java.io.*;
 
 import java.util.Scanner;
 
 //import firstTask.Mark;
 
-public class Course {
+public class Course   implements Serializable {
 
 	Mark markCourse = new Mark();
 	
 	private String nameOfCourse;
 	private String IdOfCourse;
-	Scanner Sc = new Scanner(System.in);
+transient	Scanner Sc = new Scanner(System.in);
 	 public void setNameOfCourse(String name) { // set the name of course 
 	this.nameOfCourse = name;
 	/*System.out.println("Enter Teacher name");

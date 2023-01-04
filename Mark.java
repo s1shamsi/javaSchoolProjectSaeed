@@ -1,14 +1,15 @@
 //package objchain;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class Mark {
+public class Mark implements Serializable {
 
 	
 	private int theMark;
 	//private String gOfMark;
 	int mark;
-	Scanner Sc = new Scanner(System.in);
+	transient Scanner Sc = new Scanner(System.in);
 	 public void setTheMark(int mark) { // set the mark
 	this.theMark = mark;
 	/*System.out.println("Enter Teacher name");
